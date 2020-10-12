@@ -12,12 +12,14 @@ body {
 }
 
 header {
-    height: 10vh;
+    height: 8vh;
     padding: 0px 20px;
     border-bottom: 1px;
     border-bottom-style: solid;
     border-color: #9d9f9f;
 }
+
+/*abkürkung border-bottom: 1px solid;*/
 
 .menu-left {
     display: flex;
@@ -102,7 +104,46 @@ main {
     margin-top: 60px;
 }
 
+.line::before {
+    content: " ";
+    height: 3px;
+    width: 30px;
+    display: inline-block;
+    background-color: #ac8059;
+    margin-right: 1em;
+    position: relative;
+    top: -0.5ch;
+}
+
+.left a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #ac8059;
+}
+
 .right img {
     margin-left: 30px;
     width: 20vw;
 }
+
+#pagination {
+position: fixed;
+bottom: 3rem;
+right: 3rem;
+}
+
+#pagination img {
+    margin: 0px 10px 0px 10px;
+}
+
+footer img {
+    width: 20px;
+    margin: 0px 5px 0px 5px;
+}
+
+footer {
+    position: fixed;
+    bottom: 3.3rem;
+    left: 3.3rem;
+    }
